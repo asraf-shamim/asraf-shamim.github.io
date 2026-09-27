@@ -3,183 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Md. Asraful Ahamed - Real Estate Sales & Marketing Professional</title>
-    <!-- Tailwind CSS CDN -->
+    <title>Md. Asraful Ahamed - Portfolio</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            green: '#1a3c2b',
+                            cream: '#fdfbf7',
+                            gray: '#f5f4f0'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans leading-relaxed">
+<body class="bg-brand-cream text-gray-800 font-sans antialiased overflow-x-hidden">
 
-    <!-- Header / Hero Section -->
-    <header class="bg-slate-900 text-white py-16 px-6 shadow-md">
-        <div class="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-            <div class="flex items-center gap-6">
-                <!-- User's profile picture -->
-                <img src="profile.jpg" alt="Md. Asraful Ahamed" class="w-24 h-24 rounded-full border-4 border-amber-500 shadow-xl object-cover">
-                <div>
-                    <h1 class="text-4xl font-extrabold tracking-tight">Md. Asraful Ahamed</h1>
-                    <p class="text-xl text-amber-400 font-medium mt-1">Deputy Manager – Sales & Marketing</p>
-                    <p class="text-slate-300 text-sm mt-2 flex items-center gap-2">
-                        <i class="fa-solid fa-location-dot text-amber-400"></i> Dhaka, Bangladesh
-                    </p>
-                </div>
+    <!-- Navigation -->
+    <nav class="flex justify-between items-center py-6 px-6 md:px-12 max-w-7xl mx-auto" data-aos="fade-down" data-aos-duration="800">
+        <div class="font-serif font-bold text-xl tracking-tight text-gray-900">Md. Asraful Ahamed</div>
+        <div class="hidden md:flex gap-8 text-sm font-medium text-gray-500">
+            <a href="#" class="hover:text-gray-900 transition-colors">About</a>
+            <a href="#" class="hover:text-gray-900 transition-colors">Experience</a>
+            <a href="#" class="hover:text-gray-900 transition-colors">Expertise</a>
+            <a href="#" class="hover:text-gray-900 transition-colors">Education</a>
+        </div>
+        <a href="mailto:shamimasraf7@gmail.com" class="bg-brand-green hover:bg-green-900 text-white px-5 py-2 rounded text-sm font-medium transition-colors shadow-md hover:shadow-lg">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-6 md:px-12 pt-8 pb-16 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+        <div class="order-2 lg:order-1" data-aos="fade-up" data-aos-duration="1000">
+            <p class="text-xs text-gray-500 mb-6 flex items-center gap-2 font-medium">
+                <span class="w-1.5 h-1.5 rounded-full bg-orange-400 inline-block animate-pulse"></span>
+                Currently at Sujon Holdings Ltd.
+            </p>
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-serif font-bold leading-[1.1] mb-6 text-gray-900">
+                Md. Asraful<br>Ahamed
+            </h1>
+            <h2 class="text-xl text-brand-green font-semibold mb-4">Deputy Manager – Sales & Marketing</h2>
+            <p class="text-sm text-gray-500 mb-8 max-w-md leading-relaxed">
+                Real Estate Sales · Business Development · Client Relationship Management
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 text-xs text-gray-600 mb-10">
+                <div class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-brand-green"></i> Dhaka, Bangladesh</div>
+                <div class="flex items-center gap-2"><i class="fa-solid fa-phone text-brand-green"></i> +880 1673 172452</div>
+                <div class="flex items-center gap-2"><i class="fa-solid fa-envelope text-brand-green"></i> shamimasraf7@gmail.com</div>
             </div>
-            <div class="flex flex-wrap gap-3">
-                <a href="mailto:shamimasraf7@gmail.com" class="bg-amber-500 hover:bg-amber-600 text-slate-900 font-semibold px-4 py-2 rounded-lg transition text-sm flex items-center gap-2">
-                    <i class="fa-solid fa-envelope"></i> Email Me
-                </a>
-                <a href="https://www.linkedin.com/in/asraful-ahamed-" target="_blank" class="bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white font-semibold px-4 py-2 rounded-lg transition text-sm flex items-center gap-2">
-                    <i class="fa-brands fa-linkedin"></i> LinkedIn
-                </a>
-                <a href="https://vercel.com/shamimasraf7-3247" target="_blank" class="bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white font-semibold px-4 py-2 rounded-lg transition text-sm flex items-center gap-2">
-                    <i class="fa-solid fa-globe"></i> Vercel
-                </a>
+
+            <div class="flex flex-wrap gap-4">
+                <a href="mailto:shamimasraf7@gmail.com" class="bg-brand-green hover:bg-green-900 text-white px-6 py-3 rounded text-sm font-medium transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">Get in touch</a>
+                <a href="https://www.linkedin.com/in/asraful-ahamed-" class="border border-gray-300 hover:border-gray-400 hover:bg-gray-50 text-gray-700 px-6 py-3 rounded text-sm font-medium transition-all">View experience</a>
             </div>
         </div>
-    </header>
+        
+        <div class="order-1 lg:order-2" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+            <!-- Now using your personal picture -->
+            <img src="profile.jpg" alt="Md. Asraful Ahamed" class="w-full h-[400px] lg:h-[600px] object-cover object-top rounded-2xl shadow-2xl">
+        </div>
+    </section>
 
-    <!-- Main Container -->
-    <main class="max-w-4xl mx-auto px-6 py-10 space-y-12">
+    <!-- Stats Section -->
+    <section class="max-w-7xl mx-auto px-6 md:px-12 relative z-10 -mt-6 lg:-mt-12 mb-16" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+        <div class="bg-white border border-gray-100 grid grid-cols-2 lg:grid-cols-4 divide-y lg:divide-y-0 lg:divide-x divide-gray-100 shadow-[0_8px_30px_rgb(0,0,0,0.08)] rounded-xl transition-transform hover:-translate-y-1 duration-300">
+            <div class="p-6 md:p-8">
+                <div class="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-2">13+</div>
+                <div class="text-xs text-gray-500 font-medium">Years in real estate sales</div>
+            </div>
+            <div class="p-6 md:p-8">
+                <div class="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-2">BDT 25+ Cr</div>
+                <div class="text-xs text-gray-500 font-medium">Cumulative sales revenue</div>
+            </div>
+            <div class="p-6 md:p-8">
+                <div class="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-2">110%</div>
+                <div class="text-xs text-gray-500 font-medium">Of individual sales targets</div>
+            </div>
+            <div class="p-6 md:p-8">
+                <div class="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-2">3×</div>
+                <div class="text-xs text-gray-500 font-medium leading-tight">Best Seller of the Month, 2024</div>
+            </div>
+        </div>
+    </section>
 
-        <!-- Career Summary -->
-        <section class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
-            <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-3">
-                <i class="fa-solid fa-user-tie text-amber-500"></i> Career Summary
+    <!-- Content Split Section -->
+    <section class="max-w-7xl mx-auto px-6 md:px-12 py-12 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 overflow-hidden">
+        
+        <!-- Left Side: Summary -->
+        <div class="lg:col-span-7 lg:pr-8" data-aos="fade-right" data-aos-duration="1000">
+            <p class="text-[10px] font-bold tracking-widest text-gray-400 uppercase mb-4">Career Summary</p>
+            <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6 leading-tight text-gray-900">
+                Turning property into<br>lasting client value
             </h2>
-            <p class="text-slate-600 leading-relaxed">
-                Dynamic and result-driven Real Estate Sales & Marketing Professional with over 13 years of proven expertise in land and plot sales, apartment sales, business development, client relationship management, and team leadership. Currently serving as Deputy Manager (Sales & Marketing) at Sujon Holdings Limited with a strong track record in lead generation, strategic sales forecasting, high-value client relationship management (CRM), conducting project presentation, organizing site visits, and closing sales opportunities. I have extensive experience in developing sales strategies, managing client portfolios, negotiating deals, and building long-term business relationship. Passionate about delivering value to clients through professional consultation and identifying profitable investment opportunities in the real estate sector.
+            <p class="text-gray-600 text-sm leading-relaxed mb-10">
+                Dynamic and result-driven Real Estate Sales & Marketing Professional with over 13 years of proven expertise in land and plot sales, apartment sales, business development, client relationship management, and team leadership. I specialise in lead generation, strategic sales forecasting, high-value client management, project presentations, site visits and closing sales opportunities — delivering value to clients through professional consultation and profitable investment opportunities in the real estate sector.
             </p>
-        </section>
-
-        <!-- Key Achievements -->
-        <section class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
-            <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
-                <i class="fa-solid fa-trophy text-amber-500"></i> Key Achievements
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="p-5 rounded-xl bg-amber-50/50 border border-amber-100">
-                    <h3 class="font-bold text-slate-900 text-lg mb-1">BDT 25+ Crore</h3>
-                    <p class="text-slate-600 text-sm">Generated in cumulative revenue through land, plot, and apartment sales across prime locations in Dhaka.</p>
+            
+            <!-- Mini Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="border border-gray-100 bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa-solid fa-arrow-trend-up text-brand-green mb-4 block text-xl"></i>
+                    <h4 class="font-bold text-gray-900 text-sm mb-2">Sales Revenue</h4>
+                    <p class="text-xs text-gray-500 leading-relaxed">Generated over BDT 25+ Crore in cumulative revenue through land, plot and apartment sales across prime Dhaka locations.</p>
                 </div>
-                <div class="p-5 rounded-xl bg-amber-50/50 border border-amber-100">
-                    <h3 class="font-bold text-slate-900 text-lg mb-1">Best Seller of the Month</h3>
-                    <p class="text-slate-600 text-sm">Awarded three times in 2024, consistently achieving 110 % of individual sales targets and closing multi-million BDT residential deals.</p>
+                <div class="border border-gray-100 bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fa-solid fa-award text-brand-green mb-4 block text-xl"></i>
+                    <h4 class="font-bold text-gray-900 text-sm mb-2">Target Achievement</h4>
+                    <p class="text-xs text-gray-500 leading-relaxed">Awarded "Best Seller of the Month" three times in 2024, consistently achieving 110% of individual targets.</p>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- Core Competencies -->
-        <section class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
-            <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
-                <i class="fa-solid fa-star text-amber-500"></i> Core Competencies
-            </h2>
-            <div class="flex flex-wrap gap-2">
-                <span class="bg-slate-100 text-slate-700 px-3 py-1.5 rounded-lg text-sm font-medium">Real Estate Sales & Marketing</span>
-                <span class="bg-slate-100 text-slate-700 px-3 py-1.5 rounded-lg text-sm font-medium">Land & Plot Sales</span>
-                <span class="bg-slate-100 text-slate-700 px-3 py-1.5 rounded-lg text-sm font-medium">Client Relationship Management (CRM)</span>
-                <span class="bg-slate-100 text-slate-700 px-3 py-1.5 rounded-lg text-sm font-medium">Sales Team Leadership</span>
-                <span class="bg-slate-100 text-slate-700 px-3 py-1.5 rounded-lg text-sm font-medium">Negotiation & Closing</span>
-                <span class="bg-slate-100 text-slate-700 px-3 py-1.5 rounded-lg text-sm font-medium">Market Analysis</span>
-                <span class="bg-slate-100 text-slate-700 px-3 py-1.5 rounded-lg text-sm font-medium">Strategic Sales Planning</span>
-                <span class="bg-slate-100 text-slate-700 px-3 py-1.5 rounded-lg text-sm font-medium">Lead Generation & Conversion</span>
-                <span class="bg-slate-100 text-slate-700 px-3 py-1.5 rounded-lg text-sm font-medium">Digital & Facebook Marketing</span>
-                <span class="bg-slate-100 text-slate-700 px-3 py-1.5 rounded-lg text-sm font-medium">Project Presentation & Site Visit Management</span>
-            </div>
-        </section>
-
-        <!-- Professional Experience -->
-        <section class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
-            <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
-                <i class="fa-solid fa-briefcase text-amber-500"></i> Professional Experience
-            </h2>
-            <div class="space-y-8 border-l-2 border-slate-200 pl-6 ml-2">
+        <!-- Right Side: Strengths -->
+        <div class="lg:col-span-5" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+            <div class="bg-brand-green text-white p-8 md:p-10 rounded-2xl h-full shadow-xl transform transition-transform hover:scale-[1.02] duration-300">
+                <h3 class="text-xl font-serif font-bold mb-8">Professional Strengths</h3>
                 
-                <div class="relative">
-                    <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-amber-500 border-4 border-white"></span>
-                    <h3 class="font-bold text-lg text-slate-900">Deputy Manager (Sales & Marketing)</h3>
-                    <p class="text-amber-600 font-medium text-sm">Sujon Holdings Ltd. • Ati Bazar, Keraniganj, Dhaka</p>
-                    <span class="text-xs text-slate-400 block mt-0.5">November, 2025- Continue</span>
-                    <p class="text-slate-600 text-sm mt-2">Responsible for Land Sales, Land Share Sales, Apartment Sales, Collection etc.</p>
-                </div>
-
-                <div class="relative">
-                    <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-slate-300 border-4 border-white"></span>
-                    <h3 class="font-bold text-lg text-slate-900">Deputy Manager (Sales & Marketing)</h3>
-                    <p class="text-amber-600 font-medium text-sm">Dhaka Modern City Ltd. • Kawran Bazar, Dhaka</p>
-                    <span class="text-xs text-slate-400 block mt-0.5">January, 2023- October, 2025</span>
-                    <p class="text-slate-600 text-sm mt-2">Responsible for Land Sales, Land Share Sales, Apartment Sales, Collection etc.</p>
-                </div>
-
-                <div class="relative">
-                    <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-slate-300 border-4 border-white"></span>
-                    <h3 class="font-bold text-lg text-slate-900">Sr. Asst. Manager (Sales & Marketing)</h3>
-                    <p class="text-amber-600 font-medium text-sm">MAK-INNO Development Ltd. • Dhanmondi, Dhaka</p>
-                    <span class="text-xs text-slate-400 block mt-0.5">February, 2022 – December, 2022</span>
-                    <p class="text-slate-600 text-sm mt-2">Responsible for, Land Sales, Credit Collection.</p>
-                </div>
-
-                <div class="relative">
-                    <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-slate-300 border-4 border-white"></span>
-                    <h3 class="font-bold text-lg text-slate-900">Asst. Manager (Sales & Marketing)</h3>
-                    <p class="text-amber-600 font-medium text-sm">MH Group, Lake Island Dhaka • Gulshan-1, Dhaka</p>
-                    <span class="text-xs text-slate-400 block mt-0.5">December, 2021- Janaury, 2022</span>
-                    <p class="text-slate-600 text-sm mt-2">Responsible for Land Sales, Land Share Sales, Apartment Sales, Collection etc.</p>
-                </div>
-
-                <div class="relative">
-                    <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-slate-300 border-4 border-white"></span>
-                    <h3 class="font-bold text-lg text-slate-900">Asst. Manager (Sales & Marketing)</h3>
-                    <p class="text-amber-600 font-medium text-sm">ECO- TECH Group • Mirpur-01, Dhaka</p>
-                    <span class="text-xs text-slate-400 block mt-0.5">February, 2017 – October, 2021</span>
-                    <p class="text-slate-600 text-sm mt-2">Responsible for Land Sales, Garden Sales, Credit Collection etc.</p>
-                </div>
-
-                <div class="relative">
-                    <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-slate-300 border-4 border-white"></span>
-                    <h3 class="font-bold text-lg text-slate-900">Executive (Sales & Marketing)</h3>
-                    <p class="text-amber-600 font-medium text-sm">DOM-INNO Developments Ltd. • Banani, Dhaka</p>
-                    <span class="text-xs text-slate-400 block mt-0.5">March, 2013- September, 2016</span>
-                    <p class="text-slate-600 text-sm mt-2">Responsible for Apartment Sales, Credit Realization etc.</p>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Academic Qualification -->
-        <section class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
-            <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
-                <i class="fa-solid fa-graduation-cap text-amber-500"></i> Academic Qualification
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="p-5 rounded-xl border border-slate-100 bg-slate-50/50">
-                    <h3 class="font-bold text-slate-900">MBA in Marketing</h3>
-                    <p class="text-slate-600 text-sm">ASA University Bangladesh (ASAUB)</p>
-                    <span class="text-xs text-amber-600 font-semibold mt-1 block">CGPA: 3.20 out of 4.00 (December, 2016)</span>
-                </div>
-                <div class="p-5 rounded-xl border border-slate-100 bg-slate-50/50">
-                    <h3 class="font-bold text-slate-900">BBA in Accounting</h3>
-                    <p class="text-slate-600 text-sm">IBAIS University, Dhaka</p>
-                    <span class="text-xs text-amber-600 font-semibold mt-1 block">CGPA: 3.32 out of 4.00 (October, 2013)</span>
-                </div>
-                <div class="p-5 rounded-xl border border-slate-100 bg-slate-50/50">
-                    <h3 class="font-bold text-slate-900">HSC (Business Studies)</h3>
-                    <p class="text-slate-600 text-sm">Dhaka Commerce College</p>
-                    <span class="text-xs text-amber-600 font-semibold mt-1 block">GPA: 4.70 Out of 5.00 (2007)</span>
-                </div>
-                <div class="p-5 rounded-xl border border-slate-100 bg-slate-50/50">
-                    <h3 class="font-bold text-slate-900">SSC (Business Studies)</h3>
-                    <p class="text-slate-600 text-sm">Mohammadpur Govt. High School</p>
-                    <span class="text-xs text-amber-600 font-semibold mt-1 block">GPA: 4.63 out of 5.00 (2005)</span>
+                <div class="space-y-6">
+                    <div class="flex gap-4">
+                        <span class="text-green-300 font-serif text-sm">01</span>
+                        <p class="text-sm text-green-50 leading-relaxed">Fluent in listening, writing and speaking in both Bangla and English</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="text-green-300 font-serif text-sm">02</span>
+                        <p class="text-sm text-green-50 leading-relaxed">Builds rapport with people of every attitude and mindset</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="text-green-300 font-serif text-sm">03</span>
+                        <p class="text-sm text-green-50 leading-relaxed">Hard-working, result-driven, never-give-up mindset</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="text-green-300 font-serif text-sm">04</span>
+                        <p class="text-sm text-green-50 leading-relaxed">Leads teams — motivating, inspiring and driving toward outcomes</p>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+        
+    </section>
 
-    </main>
+    <!-- Footer Space -->
+    <div class="pb-20"></div>
 
-    <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm mt-16 border-t border-slate-800">
-        <p>© 2026 Md. Asraful Ahamed. All rights reserved.</p>
-    </footer>
-
+    <!-- AOS Animation Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true, // Animation happens only once while scrolling down
+            offset: 50, // Triggers animation slightly earlier
+        });
+    </script>
 </body>
 </html>
